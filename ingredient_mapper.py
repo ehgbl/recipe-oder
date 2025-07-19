@@ -58,7 +58,7 @@ class IngredientMapper:
         """Find the best Instacart product for this ingredient"""
         ingredient = ingredient.lower().strip()
         
-        # Remove common words that don't help
+        # Remove common words 
         for word in ["fresh", "large", "medium", "small", "whole"]:
             ingredient = ingredient.replace(word, "").strip()
         
